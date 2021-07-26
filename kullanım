@@ -1,0 +1,8 @@
+cd Masaüstü/
+apt update
+apt install libssl-dev
+git clone https://github.com/magnumripper/JohnTheRipper.git
+cd JohnTheRipper/
+cd run/
+perl pdf2john.pl /root/Masaüstü/sifreli.pdf > /root/Masaüstü/hash.txt
+john hash.txt
